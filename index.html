@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Champions | Expert Window Repair in Irvine, CA</title>
+    <meta name="description" content="Professional window repair and glass replacement services in Irvine, CA and throughout Orange County. Same-day and emergency services available.">
+    <style>
+        :root {
+            --primary: #1a4b7a;
+            --secondary: #e74c3c;
+            --accent: #f39c12;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #34495e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            max-height: 60px;
+            width: auto;
+            transition: opacity 0.3s;
+        }
+
+        .logo:hover {
+            opacity: 0.9;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: var(--dark);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            margin-bottom: 20px;
+            line-height: 1.2;
+            padding: 0 10px;
+        }
+        
+        .hero p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 15px;
+            line-height: 1.6;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+        
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary);
+            padding: 0 15px;
+        }
+        
+        .section-title h2 {
+            font-size: clamp(1.8rem, 4vw, 2.2rem);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 0 10px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 35px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+        
+        .service-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        /* Service Areas Section */
+        .areas-container {
+            background-color: var(--light);
+            padding: 30px 20px;
+            border-radius: 8px;
+            margin: 0 10px;
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .area-group {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .area-group h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .area-group > p {
+            margin-bottom: 20px;
+            color: var(--text);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .sub-areas {
+            list-style: none;
+        }
+        
+        .sub-areas li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+        
+        .sub-areas li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .sub-areas li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .sub-areas li strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+        
+        .sub-areas li p {
+            color: var(--text);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        /* Blog Section */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 0 10px;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .blog-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .blog-content h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+            line-height: 1.3;
+            font-size: 1.2rem;
+        }
+        
+        .blog-content p {
+            margin-bottom: 15px;
+            color: var(--text);
+            line-height: 1.5;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        
+        .blog-content a {
+            display: inline-block;
+            margin-top: auto;
+            color: var(--secondary);
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+        
+        .blog-content a:hover {
+            color: var(--primary);
+        }
+        
+        /* Citations Section */
+        .citations-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            padding: 0 15px;
+        }
+        
+        .citations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 10px;
+        }
+        
+        .citation-category {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .citation-category h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--light);
+            font-size: 1.2rem;
+        }
+        
+        .citation-links {
+            list-style: none;
+        }
+        
+        .citation-links li {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .citation-links li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .citation-links a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            word-break: break-word;
+        }
+        
+        .citation-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .citation-links a::before {
+            content: '🔗';
+            margin-right: 10px;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-logo {
+            max-height: 70px;
+            width: auto;
+            margin-bottom: 15px;
+            transition: opacity 0.3s;
+        }
+
+        .footer-logo:hover {
+            opacity: 0.9;
+        }
+        
+        .footer-contact h3,
+        .footer-links h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-contact p {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+        
+        .footer-contact p i {
+            margin-right: 8px;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+        
+        .footer-contact a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-contact a:hover {
+            color: var(--accent);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--accent);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+            color: #bbb;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                width: 95%;
+            }
+            
+            section {
+                padding: 50px 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 12px 0;
+            }
+            
+            .logo {
+                max-height: 50px;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+                z-index: 999;
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 0;
+                border-bottom: 1px solid #f0f0f0;
+            }
+            
+            nav ul li:last-child {
+                border-bottom: none;
+            }
+            
+            nav ul li a {
+                display: block;
+                padding: 12px 0;
+                font-size: 1.1rem;
+            }
+            
+            .hero {
+                padding: 60px 0;
+                background-attachment: scroll;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                margin-bottom: 30px;
+            }
+            
+            .services-grid,
+            .blog-grid,
+            .citations-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .area-group {
+                padding: 20px;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                text-align: center;
+            }
+            
+            .footer-contact p {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+                padding: 0 20px;
+            }
+            
+            .hero {
+                padding: 50px 0;
+            }
+            
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            
+            section {
+                padding: 40px 0;
+            }
+            
+            .service-card,
+            .blog-content,
+            .citation-category {
+                padding: 20px 15px;
+            }
+            
+            .areas-container {
+                padding: 20px 15px;
+                margin: 0;
+            }
+            
+            .area-group {
+                padding: 15px;
+            }
+            
+            .footer-logo {
+                max-height: 60px;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero h1 {
+                font-size: 1.4rem;
+            }
+            
+            .hero p {
+                font-size: 0.9rem;
+            }
+            
+            .cta-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="https://repairchampions.com/">
+                <img src="https://repairchampions.com/wp-content/uploads/2025/10/REPAIR-CHAMPIONSArtboard-2.jpg" alt="Repair Champions Logo" class="logo">
+            </a>
+            <button class="mobile-menu" aria-label="Toggle navigation">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#areas">Service Areas</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#citations">Citations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Expert Window & Glass Repair in Irvine, CA</h1>
+            <p>Expert Window Repair & Glass Replacement in Irvine, CA. Repair Champions provides professional, affordable window services throughout Orange County. From emergency glass repair to window seal replacement, our skilled technicians deliver same-day solutions for residential and commercial properties.</p>
+            <a href="tel:9497033440" class="cta-button">Call Now: (949) 703-3440</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Professional Window Services</h2>
+            </div>
+            <div class="services-grid">
+                <!-- Service cards remain the same as in your original code -->
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Affordable Window Repair</h3>
+                    <p>Budget-friendly solutions for all window types without compromising on quality or durability.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🪟</div>
+                    <h3>Cracked Glass & Window Pane Repair</h3>
+                    <p>Expert restoration of damaged glass panes to restore clarity, safety, and insulation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Double Pane Glass Repair</h3>
+                    <p>Specialized repair of insulated glass units to maintain energy efficiency and prevent fogging.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Window Seal Repair</h3>
+                    <p>Professional seal restoration to eliminate condensation between panes and improve insulation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Same-Day Window Repair</h3>
+                    <p>Quick-response service to address your window issues promptly on the same day.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚨</div>
+                    <h3>Emergency Window Repair</h3>
+                    <p>24/7 emergency services for broken windows that compromise security and weather protection.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Residential Window Repair</h3>
+                    <p>Specialized solutions for homes, preserving aesthetics while ensuring functionality and safety.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🪟</div>
+                    <h3>Window Screen Repair & Replacement</h3>
+                    <p>Complete screen services including repair, replacement, and custom fitting.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h3>Broken Window Replacement</h3>
+                    <p>Full window replacement services using quality materials for lasting performance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🪚</div>
+                    <h3>Damaged Frame Repair</h3>
+                    <p>Expert frame restoration and replacement to ensure proper window operation and insulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section id="areas" style="background-color: var(--light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Areas We Serve</h2>
+            </div>
+            <div class="areas-container">
+                <div class="areas-grid">
+                    <!-- Area groups remain the same as in your original code -->
+                    <div class="area-group">
+                        <h3>Irvine, CA</h3>
+                        <p>Expert window repair and glass replacement services for Irvine homes and businesses. Same-day service available for emergency repairs and routine maintenance throughout the community.</p>
+                        <ul class="sub-areas">
+                            <li>
+                                <strong>Anaheim, CA</strong>
+                                <p>Professional window solutions serving Anaheim residents and businesses. We provide affordable glass repair, replacement services, and emergency window fixes.</p>
+                            </li>
+                            <li>
+                                <strong>Costa Mesa, CA</strong>
+                                <p>Reliable window repair services in Costa Mesa offering quality glass replacement and frame repairs. Trust our experienced technicians for durable solutions.</p>
+                            </li>
+                            <li>
+                                <strong>Dana Point, CA</strong>
+                                <p>Coastal window specialists serving Dana Point with weather-resistant glass and frame repairs. We understand oceanfront property maintenance challenges.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="area-group">
+                        <h3>Huntington Beach, CA</h3>
+                        <p>Comprehensive window services in Huntington Beach from emergency board-ups to complete restoration. Fast response times for residential and commercial properties.</p>
+                        <ul class="sub-areas">
+                            <li>
+                                <strong>Laguna Beach, CA</strong>
+                                <p>Premium window repair preserving Laguna Beach's beautiful views with quality glass replacement. We maintain property aesthetics while ensuring security.</p>
+                            </li>
+                            <li>
+                                <strong>Newport Beach, CA</strong>
+                                <p>Luxury window services for Newport Beach properties maintaining value with professional repairs. Specializing in high-quality materials and precision.</p>
+                            </li>
+                            <li>
+                                <strong>Orange, CA</strong>
+                                <p>Trusted window repair serving Orange with fast, reliable service for homes and businesses. Emergency glass replacement and maintenance available.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="area-group">
+                        <h3>San Clemente, CA</h3>
+                        <p>Coastal window experts in San Clemente providing durable, weather-resistant solutions. We specialize in addressing salt air and coastal weather damage effectively.</p>
+                        <ul class="sub-areas">
+                            <li>
+                                <strong>Santa Ana, CA</strong>
+                                <p>Affordable window solutions for Santa Ana residents and businesses. Quality repairs and replacements that fit your budget without compromising craftsmanship.</p>
+                            </li>
+                            <li>
+                                <strong>Tustin, CA</strong>
+                                <p>Quality window services in Tustin from historic home preservation to modern installations. Expert frame repairs and glass replacement services.</p>
+                            </li>
+                            <li>
+                                <strong>Throughout Orange County</strong>
+                                <p>Your local window repair experts serving all Orange County communities. Professional, reliable service with comprehensive coverage across the region.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2>Expert Window & Door Insights</h2>
+            </div>
+            <div class="blog-grid">
+                <!-- Blog cards remain the same as in your original code -->
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>A Guide to Tilt and Turn Window Mechanics & Benefits</h3>
+                        <p>Discover how tilt and turn windows work and why they're an excellent choice for modern homes seeking both ventilation and security.</p>
+                        <a href="https://repairchampions.com/what-is-a-tilt-and-turn-window/">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>Understanding Double-Hung Windows: Features and Advantages</h3>
+                        <p>Learn about the classic double-hung window design, its operational benefits, and why it remains a popular choice for homeowners.</p>
+                        <a href="https://repairchampions.com/what-are-double-hung-windows/">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>Inspiring Bay Window Ideas to Elevate Your Home's Style</h3>
+                        <p>Explore creative bay window designs that can transform your living space with added light, views, and architectural interest.</p>
+                        <a href="https://repairchampions.com/stylish-bay-window-designs-for-modern-homes/">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>Exploring Patio Doors: Types and Installation Considerations</h3>
+                        <p>Discover the different types of patio doors available and important factors to consider for proper installation and long-term performance.</p>
+                        <a href="https://repairchampions.com/what-are-patio-doors/">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>Step-by-Step Guide to Replacing a Pocket Door</h3>
+                        <p>Learn the proper techniques for replacing pocket doors, including common challenges and professional tips for smooth operation.</p>
+                        <a href="https://repairchampions.com/how-do-you-replace-a-pocket-door/">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>Standard Exterior Door Sizes: A Homeowner's Reference</h3>
+                        <p>Understand standard exterior door dimensions and measurements to ensure proper fit and functionality for your home's entryways.</p>
+                        <a href="https://repairchampions.com/standard-exterior-door-sizes/">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citations Section -->
+    <section id="citations" style="background-color: var(--light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Us Online</h2>
+            </div>
+            <div class="citations-intro">
+                <p>Repair Champions is a verified and trusted business listed on major local directories and industry platforms. These citations help establish our local presence and credibility.</p>
+            </div>
+            <div class="citations-grid">
+                <!-- Citations remain the same as in your original code -->
+                <div class="citation-category">
+                    <h3>Our Citations</h3>
+                    <ul class="citation-links">
+                        <li><a href="https://www.merchantcircle.com/repair-champions-irvine-ca" target="_blank">MerchantCircle</a></li>
+                        <li><a href="https://www.chamberofcommerce.com/business-directory/california/irvine/window-installation-service/2033952375-repair-champions" target="_blank">Chamber of Commerce</a></li>
+                        <li><a href="https://www.manta.com/c/m1x1wf7/repair-champions" target="_blank">Manta</a></li>
+                        <li><a href="https://www.brownbook.net/business/53730616/repair-champions" target="_blank">Brownbook</a></li>
+                        <li><a href="https://www.allbusiness.com/company-profile/repair-champions" target="_blank">AllBusiness</a></li>
+                        <li><a href="https://us.enrollbusiness.com/BusinessProfile/7585486/Repair-Champions-Irvine-CA-92614" target="_blank">Enroll Business</a></li>
+                        <li><a href="https://www.n49.com/biz/6462872/repair-champions-ca-irvine-14-silkgrass/" target="_blank">N49</a></li>
+                        <li><a href="https://www.find-us-here.com/businesses/Repair-Champions-Irvine-California-USA/34257809/" target="_blank">Find Us Here</a></li>
+                        <li><a href="https://tupalo.com/en/irvine-california/repair-champions-culver-drive" target="_blank">Tupalo</a></li>
+                        <li><a href="https://www.callupcontact.com/b/businessprofile/Repair_Champions/9613467" target="_blank">CallUpContact</a></li>
+                        <li><a href="https://www.zeemaps.com/map/knwwj?group=5288955&location=Irvine%2C%20CA%2C%20USA" target="_blank">ZeeMaps</a></li>
+                        <li><a href="https://www.dealerbaba.com/suppliers/construction-material-machinery-real-estate/doors-windows/repair-champions.html" target="_blank">DealerBaba</a></li>
+                        <li><a href="https://www.startus.cc/company/repair-champions" target="_blank">StartUs</a></li>
+                        <li><a href="https://bizidex.com/en/repair-champions-window-treatments-692392" target="_blank">BizIdex</a></li>
+                        <li><a href="https://www.classifiedads.com/home_services_stores/c611jflgc3ddw" target="_blank">Classified Ads</a></li>
+                        <li><a href="https://www.bunity.com/-2f1f3193-d4fd-4907-9c21-924a53995e34?r=" target="_blank">Bunity</a></li>
+                        <li><a href="https://www.homeservice.contractors/united-states/irvine/repair-champions" target="_blank">HomeService Contractors</a></li>
+                        <li><a href="https://citysquares.com/b/repair-champions-26186793" target="_blank">CitySquares</a></li>
+                        <li><a href="https://foursquare.com/v/repair-champions/67f79a88983d2d4d0b0eb49c" target="_blank">Foursquare</a></li>
+                        <li><a href="https://www.blinx.biz/repair-champions" target="_blank">Blinx</a></li>
+                        <li><a href="https://ebusinesspages.com/Repair-Champions_epq9t.co?PostReturn=0" target="_blank">eBusinessPages</a></li>
+                        <li><a href="https://www.1stopstartup.com/irvine-ca/home-services/repair-champions" target="_blank">1StopStartup</a></li>
+                    </ul>
+                </div>
+                
+                <div class="citation-category">
+                    <h3>&nbsp;</h3>
+                    <ul class="citation-links">
+                        <li><a href="https://mapfling.com/qddcheu" target="_blank">MapFling</a></li>
+                        <li><a href="https://www.b2bco.com/repairchampions" target="_blank">B2BCO</a></li>
+                        <li><a href="http://www.northlandhq.com/directory/listingdisplay.aspx?lid=70061" target="_blank">Northland HQ</a></li>
+                        <li><a href="https://www.earthmom.org/irvine/home-services/repair-champions" target="_blank">EarthMom</a></li>
+                        <li><a href="https://www.muslimyellowpages.com/united-states/irvine/home-improvement/repair-champions" target="_blank">Muslim Yellow Pages</a></li>
+                        <li><a href="https://www.trysmallbiz.com/united-states/irvine/home-services/repair-champions" target="_blank">TrySmallBiz</a></li>
+                        <li><a href="https://list.ly/list/BzPY-repair-champions" target="_blank">List.ly</a></li>
+                        <li><a href="https://www.irvineonline.us/profile/repair-champions" target="_blank">Irvine Online</a></li>
+                        <li><a href="https://www.bark.com/en/us/company/repair-champions/ozlPDJ/" target="_blank">Bark</a></li>
+                        <li><a href="https://www.freelistingusa.com/listings/repair-champions" target="_blank">FreeListing USA</a></li>
+                        <li><a href="https://www.topgoogle.com/listing/repair-champions/" target="_blank">TopGoogle</a></li>
+                        <li><a href="https://www.nextbizthing.com/united-states/irvine/home-20-garden/repair-champions" target="_blank">NextBizThing</a></li>
+                        <li><a href="https://vymaps.com/US/Repair-Champions-VN88505/?id_new=1793160cf6e7310ebf45800ba7b3290f" target="_blank">Vymaps</a></li>
+                        <li><a href="http://cybo.com/US-biz/repair-champions" target="_blank">Cybo</a></li>
+                        <li><a href="https://repair-champion.hub.biz/" target="_blank">Hub.biz</a></li>
+                        <li><a href="https://www.webwiki.com/repairchampions.com" target="_blank">WebWiki</a></li>
+                        <li><a href="https://www.storeboard.com/repairchampions" target="_blank">Storeboard</a></li>
+                        <li><a href="https://www.expatriates.com/cls/59322003.html?" target="_blank">Expatriates</a></li>
+                        <li><a href="https://penzu.com/p/f878306d5456cc71" target="_blank">Penzu</a></li>
+                        <li><a href="https://www.scribblemaps.com/maps/view/Repair-Champions/lBUzLNOOHs" target="_blank">Scribble Maps</a></li>
+                        <li><a href="https://pastelink.net/5204seli" target="_blank">PasteLink</a></li>
+                        <li><a href="https://www.bizthistown.com/united-states/irvine/home-garden/natalie-s" target="_blank">BizThisTown</a></li>
+                    </ul>
+                </div>
+                
+                <div class="citation-category">
+                    <h3>&nbsp;</h3>
+                    <ul class="citation-links">
+                        <li><a href="http://www.contractorsandsuppliers.com/irvine/residential-contractors/repair-champions" target="_blank">Contractors & Suppliers</a></li>
+                        <li><a href="http://www.todo15.com/irvine/sample-category/repair-champions" target="_blank">Todo15</a></li>
+                        <li><a href="http://www.moorbusinessdirect.com/irvine/home-services/repair-champions" target="_blank">Moor Business Direct</a></li>
+                        <li><a href="https://www.sold.com.au/irvine/sample-category/repair-champions" target="_blank">Sold.com.au</a></li>
+                        <li><a href="https://www.ourblackeconomy.com/irvine/home-services/repair-champions" target="_blank">Our Black Economy</a></li>
+                        <li><a href="http://www.officiallyiconic.com/irvine/home-services/repair-champions" target="_blank">Officially Iconic</a></li>
+                        <li><a href="https://www.meetyourmarkets.com/irvine/repair-champions" target="_blank">Meet Your Markets</a></li>
+                        <li><a href="https://www.fastexpert.com/pros-windowanddoorinstallation/repair-champions-121302/" target="_blank">FastExpert</a></li>
+                        <li><a href="https://www.apsense.com/user/repairchampions" target="_blank">APSense</a></li>
+                        <li><a href="https://www.provenexpert.com/repair-champions/?mode=preview" target="_blank">ProvenExpert</a></li>
+                        <li><a href="https://thebuildermarket.com/pros/repair-champions-avr48569" target="_blank">The Builder Market</a></li>
+                        <li><a href="https://network.procore.com/p/repair-champions-irvine" target="_blank">Procore Network</a></li>
+                        <li><a href="https://linktr.ee/repairchampions" target="_blank">Linktree</a></li>
+                        <li><a href="https://trueen.com/business/listing/repair-champions/654980" target="_blank">Trueen</a></li>
+                        <li><a href="https://issuu.com/repairchampions" target="_blank">Issuu</a></li>
+                        <li><a href="https://about.me/repairchampions" target="_blank">About.me</a></li>
+                        <li><a href="https://www.onestopb2b.com/business-page.php?fid=CCFKMS#" target="_blank">OneStopB2B</a></li>
+                        <li><a href="https://www.biopage.com/repairchampions" target="_blank">Biopage</a></li>
+                        <li><a href="https://www.houzz.com/pro/coleman-jones50/repair-champions" target="_blank">Houzz</a></li>
+                        <li><a href="https://www.buildzoom.com/contractor/repair-champions" target="_blank">BuildZoom</a></li>
+                        <li><a href="https://pro.porch.com/irvine-ca/window-contractors/repair-champions/pp" target="_blank">Porch</a></li>
+                        <li><a href="https://www.homify.com/professionals/9925335/repair-champions" target="_blank">Homify</a></li>
+                        <li><a href="https://clutch.co/profile/repair-champions" target="_blank">Clutch</a></li>
+                        <li><a href="https://www.owler.com/company/repairchampions" target="_blank">Owler</a></li>
+                        <li><a href="https://1businessworld.com/company/repair-champions/" target="_blank">1BusinessWorld</a></li>
+                        <li><a href="https://www.sbdpro.com/business/repair-champions" target="_blank">SBD Pro</a></li>
+                        <li><a href="https://www.tuugo.us/listing/repair-champions/" target="_blank">Tuugo</a></li>
+                        <li><a href="https://www.locanto.com/greenville-sc/ID_7943514002/Repair-Champions-provides-professional-home-repair.html&myads" target="_blank">Locanto</a></li>
+                        <li><a href="https://patch.com/california/irvine-ca/business/listing/556672/repair-champions" target="_blank">Patch</a></li>
+                        <li><a href="https://yandex.ru/maps/org/98955137069/?utm_source=sender&utm_medium=email&utm_campaign=941672&utm_content=feedback_maps&utm_term=org&group_name=transact" target="_blank">Yandex Maps</a></li>
+                        <li><a href="http://www.askmap.net/location/7330225/united-states/repair-champions" target="_blank">AskMap</a></li>
+                        <li><a href="http://yumlist.ca/irvine/windows-doors/repair-champions" target="_blank">YumList</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="https://repairchampions.com/">
+                        <img src="https://repairchampions.com/wp-content/uploads/2025/10/REPAIR-CHAMPIONSArtboard-2.jpg" alt="Repair Champions Logo" class="footer-logo">
+                    </a>
+                    <p>Professional window repair and glass replacement services in Irvine, CA and throughout Orange County.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>
+                        <i>📍</i> 
+                        <a href="https://maps.google.com/?q=14+Silkgrass,Irvine,CA,92614" target="_blank">
+                            14 Silkgrass, Irvine, CA 92614
+                        </a>
+                    </p>
+                    <p>
+                        <i>📞</i> 
+                        <a href="tel:9497033440">
+                            (949) 703-3440
+                        </a>
+                    </p>
+                    <p>
+                        <i>✉️</i> 
+                        <a href="mailto:info@repairchampions.com">
+                            info@repairchampions.com
+                        </a>
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#areas">Service Areas</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#citations">Citations</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Repair Champions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const nav = document.querySelector('nav ul');
+            
+            mobileMenu.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                // Change menu icon
+                this.textContent = nav.classList.contains('active') ? '✕' : '☰';
+            });
+            
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('nav ul li a').forEach(link => {
+                link.addEventListener('click', function() {
+                    nav.classList.remove('active');
+                    mobileMenu.textContent = '☰';
+                });
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('nav') && !event.target.closest('.mobile-menu')) {
+                    nav.classList.remove('active');
+                    mobileMenu.textContent = '☰';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
